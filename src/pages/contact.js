@@ -21,6 +21,8 @@ const ContactPage = ({
         </div>
         <div>
         <form name="contact-example" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact-example" />
+
           <p>
             <label>Your Name: <input type="text" name="name" /></label>   
           </p>
@@ -41,6 +43,8 @@ const ContactPage = ({
           </p>
         </form>
           <form className="form-container" method="post" data-netlify="true" name="contact">
+          <input type="hidden" name="form-name" value="contact" />
+
             <div>
               <label >Name</label>
               <input type="text" name="w3lName" id="w3lName"/>
